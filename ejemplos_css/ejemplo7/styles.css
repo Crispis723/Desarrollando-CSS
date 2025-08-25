@@ -1,0 +1,6 @@
+.contenedor {
+  font-size: 20px;
+}
+.contenedor p {
+  font-size: 1.2em; /* equivale a 24px */
+}
