@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Pseudo-elementos de Texto</title>
+  <style>
+    /* Estilizar la primera letra de un párrafo */
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: red;
+    }
+
+    /* Estilizar la primera línea de un párrafo */
+    p::first-line {
+      font-style: italic;
+      color: blue;
+    }
+
+    /* Estilizar el texto que el usuario selecciona */
+    p::selection {
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Pseudo-elementos de Texto</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sem sed arcu malesuada fermentum. 
+    Proin nec tortor eget justo facilisis scelerisque. Selecciona este texto para ver el efecto.
+  </p>
+</body>
+</html>

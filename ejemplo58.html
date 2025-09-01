@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid con posición específica</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+      grid-template-rows: repeat(3, 100px); /* 3 filas de 100px */
+      gap: 10px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border: 2px solid #333;
+    }
+
+    .item {
+      background-color: lightcoral;
+      border: 2px solid darkred;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    /* Este ítem se ubica en fila 2, columna 2 */
+    .item-2 {
+      grid-row: 2;
+      grid-column: 2;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ejemplo: ubicación específica en Grid</h2>
+  <div class="grid-container">
+    <div class="item">1</div>
+    <div class="item item-2">2 (Fila 2, Columna 2)</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+</body>
+</html>

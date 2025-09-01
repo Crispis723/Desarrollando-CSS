@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modo Claro/Oscuro con CSS Variables</title>
+  <style>
+    /* Variables por defecto (modo claro) */
+    :root {
+      --color-fondo: white;
+      --color-texto: black;
+    }
+
+    /* Variables para modo oscuro */
+    body.tema-oscuro {
+      --color-fondo: black;
+      --color-texto: white;
+    }
+
+    body {
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s; /* transición suave */
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Modo Claro/Oscuro</h1>
+  <p>Presiona el botón para alternar entre los temas.</p>
+  <button id="toggleTema">Cambiar Tema</button>
+
+  <script>
+    const boton = document.getElementById('toggleTema');
+    boton.addEventListener('click', () => {
+      document.body.classList.toggle('tema-oscuro');
+    });
+  </script>
+</body>
+</html>

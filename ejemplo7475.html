@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Selectores Avanzados</title>
+  <style>
+    /* Selector de hijo directo */
+    div > p {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Selector de hermano adyacente */
+    h1 + p {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Selector de hermanos generales */
+    h2 ~ p {
+      color: green;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título principal</h1>
+  <p>Párrafo adyacente a H1 (azul, subrayado)</p>
+  <p>Otro párrafo después de H1 (no azul, no subrayado)</p>
+
+  <h2>Subtítulo</h2>
+  <p>Párrafo hermano de H2 1 (verde, cursiva)</p>
+  <p>Párrafo hermano de H2 2 (verde, cursiva)</p>
+
+  <div>
+    <p>Hijo directo de div (rojo, negrita)</p>
+    <section>
+      <p>Nieto de div (no rojo)</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de CSS Variables</title>
+  <style>
+    /* Definición de variables globales */
+    :root {
+      --color-principal: #3498db;
+      --tamano-fuente-base: 16px;
+      --color-fondo: #f4f4f4;
+    }
+
+    body {
+      font-size: var(--tamano-fuente-base);
+      background-color: var(--color-fondo);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--color-principal);
+    }
+
+    a {
+      color: var(--color-principal);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de CSS Variables</h1>
+  <p>Este es un párrafo con <a href="#">un enlace</a> usando la variable de color.</p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparación justify-content</title>
+  <style>
+    .flex-container {
+      display: flex;
+      align-items: center;
+      height: 100px;
+      margin: 20px 0;
+      border: 2px solid #333;
+      background-color: #f4f4f4;
+    }
+
+    .flex-container div {
+      background-color: lightblue;
+      padding: 10px 20px;
+      border: 2px solid darkblue;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .space-around {
+      justify-content: space-around;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+
+    h2 {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>space-around</h2>
+  <div class="flex-container space-around">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <h2>space-between</h2>
+  <div class="flex-container space-between">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <h2>space-evenly</h2>
+  <div class="flex-container space-evenly">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>

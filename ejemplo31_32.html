@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Especificidad CSS</title>
+  <style>
+    /* Regla general: todos los párrafos azules */
+    p {
+      color: blue;
+    }
+
+    /* Más específico: solo los párrafos con clase .mi-parrafo en rojo */
+    .mi-parrafo {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Especificidad</h1>
+  
+  <p>Este es un párrafo normal, se verá en azul.</p>
+  <p class="mi-parrafo">Este es un párrafo con clase .mi-parrafo, se verá en rojo.</p>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Valores de align-items en Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      height: 150px;
+      margin: 20px 0;
+      border: 2px solid #333;
+      background: #f4f4f4;
+    }
+
+    .flex-container div {
+      background: lightblue;
+      padding: 10px 20px;
+      margin: 5px;
+      border: 2px solid darkblue;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* Diferentes valores de align-items */
+    .start {
+      align-items: flex-start;
+    }
+
+    .center {
+      align-items: center;
+    }
+
+    .end {
+      align-items: flex-end;
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+  </style>
+</head>
+<body>
+  <h2>align-items: flex-start</h2>
+  <div class="flex-container start">
+    <div>1</div>
+    <div style="height:60px;">2</div>
+    <div>3</div>
+  </div>
+
+  <h2>align-items: center</h2>
+  <div class="flex-container center">
+    <div>1</div>
+    <div style="height:60px;">2</div>
+    <div>3</div>
+  </div>
+
+  <h2>align-items: flex-end</h2>
+  <div class="flex-container end">
+    <div>1</div>
+    <div style="height:60px;">2</div>
+    <div>3</div>
+  </div>
+
+  <h2>align-items: stretch</h2>
+  <div class="flex-container stretch">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <h2>align-items: baseline</h2>
+  <div class="flex-container baseline">
+    <div style="font-size:12px;">1</div>
+    <div style="font-size:30px;">2</div>
+    <div style="font-size:20px;">3</div>
+  </div>
+</body>
+</html>

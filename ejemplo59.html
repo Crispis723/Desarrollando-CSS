@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con Media Query</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    /* Media query: cuando la pantalla sea 600px o menos */
+    @media (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+
+      h1 {
+        color: darkred;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Query en acción</h1>
+  <p>Cambia el tamaño de la ventana para ver el efecto.</p>
+</body>
+</html>

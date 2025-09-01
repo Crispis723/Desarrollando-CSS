@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con clear</title>
+  <style>
+    .imagen {
+      float: left;
+      margin-right: 15px;
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+    }
+
+    .contenido {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .pie-de-pagina {
+      clear: both; /* Se coloca debajo de todo lo flotante */
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <img src="imagenes/CDGunsN_Roses_AppetiteForDestruction_b8ac11cf-6d86-43cd-bad1-7c4c22e5c9f2.webp" width="200" height="200">
+    <div class="contenido">
+      <p>Este es el contenido principal. La imagen está flotando a la izquierda y el texto fluye a su lado. El pie de página quedará debajo gracias a <code>clear: both;</code>.</p>
+    </div>
+    <div class="pie-de-pagina">
+      Pie de página con clear: both;
+    </div>
+  </div>
+</body>
+</html>

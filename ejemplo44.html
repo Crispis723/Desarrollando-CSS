@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo encabezado pegajoso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .encabezado-pegajoso {
+      position: sticky;
+      top: 0; /* Se queda pegado cuando llegue a esta posición */
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      z-index: 10; /* Para estar encima del contenido */
+    }
+
+    .contenido {
+      height: 2000px;
+      padding: 15px;
+      background: linear-gradient(white, lightgray);
+    }
+
+    h2 {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="encabezado-pegajoso">
+    Encabezado Pegajoso (Sticky)
+  </div>
+
+  <div class="contenido">
+    <h2>Sección 1</h2>
+    <p>Haz scroll y verás cómo el encabezado se queda en la parte superior hasta que termine su contenedor.</p>
+
+    <h2>Sección 2</h2>
+    <p>Continúa bajando y verás la diferencia con position: fixed.</p>
+  </div>
+</body>
+</html>

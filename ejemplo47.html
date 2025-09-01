@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con border-box</title>
+  <style>
+    /* Aplicamos border-box a todos los elementos */
+    * {
+      box-sizing: border-box;
+    }
+
+    .contenedor {
+      width: 300px;
+      margin: 20px auto;
+      padding: 10px;
+      border: 5px solid #333;
+      background-color: lightblue;
+    }
+
+    .caja {
+      width: 100%;       /* Esto respeta el contenedor gracias a border-box */
+      padding: 20px;
+      border: 10px solid darkblue;
+      background-color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="caja">
+      Caja con box-sizing: border-box
+    </div>
+  </div>
+</body>
+</html>

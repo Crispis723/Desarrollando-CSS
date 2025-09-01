@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con .oculto</title>
+  <style>
+    .oculto {
+      display: none; /* El elemento no se muestra ni ocupa espacio */
+    }
+
+    .boton {
+      padding: 8px 15px;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .boton:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo con .oculto</h1>
+  <div class="boton" onclick="mostrar()">Mostrar/Ocultar texto</div>
+
+  <p id="texto" class="oculto">Este texto está oculto hasta que hagas clic.</p>
+
+  <script>
+    function mostrar() {
+      const texto = document.getElementById('texto');
+      texto.classList.toggle('oculto');
+    }
+  </script>
+</body>
+</html>

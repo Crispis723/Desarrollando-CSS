@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú fijo con CSS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-fijo {
+      position: fixed;   /* Siempre visible */
+      top: 0;            /* Pegado arriba */
+      width: 100%;       /* Ocupa todo el ancho */
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;     /* Queda por encima de otros elementos */
+    }
+
+    .menu-fijo a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    .menu-fijo a:hover {
+      background-color: #555;
+    }
+
+    /* Contenido para hacer scroll */
+    .contenido {
+      margin-top: 60px; /* Espacio para que el menú no tape el contenido */
+      padding: 20px;
+      height: 2000px;
+      background: linear-gradient(white, lightgray);
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-fijo">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </div>
+
+  <div class="contenido">
+    <h1>Bienvenido</h1>
+    <p>Este es un ejemplo de menú fijo. Haz scroll para ver cómo siempre queda arriba.</p>
+  </div>
+</body>
+</html>

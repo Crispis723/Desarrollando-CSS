@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con float</title>
+  <style>
+    img {
+      float: left;          /* La imagen se alinea a la izquierda */
+      margin-right: 15px;   /* Espacio a la derecha de la imagen */
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .texto {
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <img src="imagenes/CDGunsN_Roses_AppetiteForDestruction_b8ac11cf-6d86-43cd-bad1-7c4c22e5c9f2.webp">
+    <div class="texto">
+      <p>
+        Esta es una imagen alineada a la izquierda con `float: left`. El texto fluye a su alrededor, 
+        dejando un margen a la derecha para que no se pegue a la imagen. 
+        Esto se usaba mucho antes de que Flexbox y Grid aparecieran, aunque aún es útil en ciertos casos.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

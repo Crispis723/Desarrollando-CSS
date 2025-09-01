@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;                /* Activa Flexbox */
+      justify-content: space-around;/* Espacia elementos horizontalmente */
+      align-items: center;          /* Alinea elementos verticalmente */
+      height: 150px;
+      background-color: #f4f4f4;
+      border: 2px solid #333;
+      margin: 20px;
+    }
+
+    .flex-container div {
+      background-color: lightblue;
+      padding: 20px;
+      font-size: 24px;
+      border: 2px solid darkblue;
+      text-align: center;
+      flex: 1; /* Cada elemento ocupa el mismo ancho */
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>

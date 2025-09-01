@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con ::before y ::after</title>
+  <style>
+    /* Antes del contenido del párrafo */
+    p::before {
+      content: "→ ";
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Después del contenido del párrafo */
+    p::after {
+      content: " ✔";
+      color: green;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo con ::before y ::after</h1>
+  <p>Este es el primer párrafo.</p>
+  <p>Este es el segundo párrafo.</p>
+  <p>Este es el tercer párrafo.</p>
+</body>
+</html>

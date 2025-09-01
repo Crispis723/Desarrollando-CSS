@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación Slide-in</title>
+  <style>
+    /* Definimos la animación */
+    @keyframes slide-in {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    /* Elemento que aplicará la animación */
+    .elemento {
+      width: 200px;
+      height: 100px;
+      background-color: lightcoral;
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+      margin: 50px;
+      animation: slide-in 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Animación CSS</h1>
+  <div class="elemento">¡Hola!</div>
+</body>
+</html>

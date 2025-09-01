@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con nth-child</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 200px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+
+    li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Elementos impares */
+    li:nth-child(odd) {
+      background-color: lightgray;
+    }
+
+    /* Elementos pares */
+    li:nth-child(even) {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo con nth-child</h1>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 6</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+</body>
+</html>

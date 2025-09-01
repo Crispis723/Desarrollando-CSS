@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con position absolute</title>
+  <style>
+    .contenedor {
+      position: relative; /* Contenedor de referencia */
+      width: 300px;
+      height: 200px;
+      border: 2px solid #333;
+      background-color: lightblue;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .superpuesto {
+      position: absolute; /* Posicionado dentro del contenedor */
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .contenido {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo con Contenedor y Superpuesto</h1>
+
+  <div class="contenedor">
+    <div class="superpuesto">¡Nuevo!</div>
+    <div class="contenido">Contenido del contenedor</div>
+  </div>
+</body>
+</html>

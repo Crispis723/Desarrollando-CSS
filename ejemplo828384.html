@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista con Marcadores Animados</title>
+  <style>
+    ul.animada {
+      list-style-type: square; /* marcador por defecto */
+      padding-left: 30px;
+      font-size: 18px;
+    }
+
+    /* Seleccionamos el marcador */
+    ul.animada li::marker {
+      color: darkblue;
+      font-size: 1.2em;
+      transition: color 0.3s, font-size 0.3s;
+    }
+
+    /* Al pasar el mouse sobre el li, el marcador cambia */
+    ul.animada li:hover::marker {
+      color: red;
+      font-size: 1.5em;
+    }
+
+    /* Opcional: animación sobre el texto del li */
+    ul.animada li {
+      transition: transform 0.3s;
+    }
+
+    ul.animada li:hover {
+      transform: translateX(10px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista con Marcadores Animados</h1>
+  <ul class="animada">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón con CSS</title>
+  <style>
+    .boton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Efecto al pasar el mouse */
+    .boton:hover {
+      background-color: darkblue;
+      transform: scale(1.05);
+    }
+
+    /* Efecto al hacer clic */
+    .boton:active {
+      background-color: navy;
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Botón con CSS</h1>
+  <a href="#" class="boton">Haz clic aquí</a>
+</body>
+</html>

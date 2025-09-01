@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fondo Animado con Imágenes</title>
+  <style>
+    body {
+      height: 2000px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 20px;
+
+      /* Varias imágenes de fondo locales */
+      background-image: 
+        url('imagenes/CDGunsN_Roses_AppetiteForDestruction_b8ac11cf-6d86-43cd-bad1-7c4c22e5c9f2.webp'),
+        url('imagenes/CDGunsN_Roses_AppetiteForDestruction_b8ac11cf-6d86-43cd-bad1-7c4c22e5c9f2.webp');
+        
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: rgba(255, 0, 0, 0.3);
+      background-blend-mode: multiply;
+
+      /* Animación de fondo */
+      animation: fondoAnimado 10s infinite alternate;
+    }
+
+    @keyframes fondoAnimado {
+      0% {
+        background-position: 0% 0%, 100% 100%;
+      }
+      50% {
+        background-position: 50% 50%, 50% 50%;
+      }
+      100% {
+        background-position: 100% 0%, 0% 100%;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 50px auto;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fondo Animado con Imágenes Locales</h1>
+  <p>
+    Las imágenes de fondo se mezclan con <strong>background-blend-mode: multiply</strong> 
+    y se animan usando <code>@keyframes</code>.  
+   
+  </p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Pseudo-clases</title>
+  <style>
+    /* Primer hijo */
+    ul li:first-child {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Último hijo */
+    ul li:last-child {
+      color: blue;
+      font-style: italic;
+    }
+
+    /* Elementos que no tienen la clase .especial */
+    ul li:not(.especial) {
+      background-color: #f2f2f2;
+    }
+
+    /* Cuando un input recibe foco */
+    input:focus {
+      border: 2px solid green;
+      outline: none;
+      background-color: #e0ffe0;
+    }
+
+    /* Elementos seleccionados (checkbox o radio) */
+    input:checked + label {
+      color: white;
+      background-color: #3498db;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Pseudo-clases</h1>
+
+  <h2>Lista de elementos</h2>
+  <ul>
+    <li>Primer elemento</li>
+    <li class="especial">Elemento especial</li>
+    <li>Último elemento</li>
+  </ul>
+
+  <h2>Formulario</h2>
+  <input type="text" placeholder="Escribe aquí">
+  <br><br>
+  <input type="checkbox" id="opcion1">
+  <label for="opcion1">Opción 1</label>
+  <br>
+  <input type="checkbox" id="opcion2">
+  <label for="opcion2">Opción 2</label>
+</body>
+</html>

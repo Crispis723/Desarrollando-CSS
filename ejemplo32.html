@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con !important</title>
+  <style>
+    /* Regla general con !important */
+    p {
+      color: green !important; /* Tiene máxima prioridad */
+    }
+
+    /* Clase más específica */
+    .mi-parrafo {
+      color: red; /* Se ignora por !important en la regla anterior */
+    }
+
+    /* Estilo en línea (normalmente más fuerte) */
+    /* Pero !important sigue ganando */
+  </style>
+</head>
+<body>
+  <h1>Ejemplo con !important</h1>
+
+  <p>Este párrafo es verde por la regla con !important.</p>
+  <p class="mi-parrafo">Este también es verde, aunque la clase es roja.</p>
+  <p style="color: blue;"

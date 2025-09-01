@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón Pulsante</title>
+  <style>
+    /* Definimos la animación pulso */
+    @keyframes pulso {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Botón con animación */
+    .boton-pulsante {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: pulso 2s infinite; /* Animación continua */
+      transition: background-color 0.3s;
+    }
+
+    .boton-pulsante:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Botón con efecto pulsante</h1>
+  <button class="boton-pulsante">Haz clic</button>
+</body>
+</html>

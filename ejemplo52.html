@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex-direction + Order</title>
+  <style>
+    .flex-container {
+      display: flex;
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 20px;
+      background: #f4f4f4;
+      height: 300px;
+      /* Cambia entre row, row-reverse, column, column-reverse */
+      flex-direction: row;
+    }
+
+    .flex-container div {
+      background: lightblue;
+      margin: 5px;
+      padding: 20px;
+      text-align: center;
+      border: 2px solid darkblue;
+      font-size: 20px;
+      flex: 1;
+    }
+
+    /* Cambiamos el orden */
+    .item-1 {
+      order: 3; /* Se mostrará de último */
+    }
+    .item-2 {
+      order: 1; /* Se mostrará de primero */
+    }
+    .item-3 {
+      order: 2; /* Se mostrará en el medio */
+    }
+  </style>
+</head>
+<body>
+  <h2>Combinar flex-direction y order</h2>
+  <div class="flex-container">
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>
+  </div>
+</body>
+</html>

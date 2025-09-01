@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Unidades CSS</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    div {
+      width: 500px; /* Ancho fijo en píxeles */
+      background-color: lightblue;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    /* Párrafo con tamaño relativo al padre */
+    .parrafo-em {
+      font-size: 1.2em; /* 1.2 veces el tamaño del padre */
+    }
+
+    /* Párrafo con tamaño relativo a la raíz (html) */
+    .parrafo-rem {
+      font-size: 1.5rem; /* 1.5 * 16px = 24px */
+    }
+
+    /* Contenedor que ocupa el 80% del ancho de la ventana */
+    .contenedor {
+      width: 80vw;
+      background-color: lightgreen;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    /* Sección que ocupa el alto completo de la ventana */
+    .seccion {
+      height: 100vh;
+      background-color: lightcoral;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="parrafo-em">Texto con 1.2em: relativo al tamaño del div.</p>
+    <p class="parrafo-rem">Texto con 1.5rem: relativo al tamaño raíz.</p>
+  </div>
+
+  <div class="contenedor">
+    Este contenedor ocupa el 80% del ancho de la ventana.
+  </div>
+
+  <div class="seccion">
+    Sección a pantalla completa (100vh)
+  </div>
+</body>
+</html>

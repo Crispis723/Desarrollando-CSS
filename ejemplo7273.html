@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformaciones Combinadas 2D y 3D</title>
+  <style>
+    .caja {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px;
+      display: inline-block;
+      transition: transform 0.5s ease; /* transición suave */
+      transform-style: preserve-3d; /* necesario para rotación 3D */
+    }
+
+    /* Transformación compleja 2D */
+    .caja.complejo:hover {
+      transform: translateX(100px) rotate(20deg) scale(1.2);
+    }
+
+    /* Rotación 3D */
+    .caja.cubo:hover {
+      transform: rotateY(60deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Transformaciones 2D y 3D</h1>
+  <div class="caja complejo">Complejo</div>
+  <div class="caja cubo">Cubo</div>
+</body>
+</html>

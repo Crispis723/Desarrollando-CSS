@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Lateral Responsive</title>
+  <style>
+    .menu-lateral {
+      display: block;
+      width: 200px;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      min-height: 100vh;
+    }
+
+    .menu-lateral ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-lateral li {
+      padding: 10px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    /* Oculta el menú en pantallas pequeñas */
+    @media (max-width: 576px) {
+      .menu-lateral {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-lateral">
+    <ul>
+      <li>Inicio</li>
+      <li>Servicios</li>
+      <li>Nosotros</li>
+      <li>Contacto</li>
+    </ul>
+  </div>
+  <div class="contenido">
+    <h1>Página Principal</h1>
+    <p>El menú lateral desaparece en pantallas pequeñas.</p>
+  </div>
+</body>
+</html>
